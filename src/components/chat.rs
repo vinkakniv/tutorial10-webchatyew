@@ -92,11 +92,7 @@ impl Component for Chat {
                             .iter()
                             .map(|u| UserProfile {
                                 name: u.into(),
-                                avatar: format!(
-                                    "https://avatars.dicebear.com/api/adventurer-neutral/{}.svg",
-                                    u
-                                )
-                                .into(),
+                                avatar: generate_avatar_for_user(u),
                             })
                             .collect();
                         return true;
@@ -200,5 +196,12 @@ impl Component for Chat {
                 </div>
             </div>
         }
+
     }
+
+
+}
+
+fn generate_avatar_for_user(user_name: &str) -> String {
+    format!("https://robohash.org/{}.png", user_name)
 }

@@ -20,3 +20,11 @@ This repository contains the code and reflections for Tutorial 10 in Advanced Pr
 ![](https://imgur.com/qlu4b8v.png)
 ![](https://imgur.com/6qeZ8mX.png)
 
+
+- _Add some creativities to the webclient_
+
+Saya menambahkan fungsi `generate_avatar_for_user(user_name: &str)` yang bertujuan untuk menghasilkan URL avatar yang berbeda untuk setiap pengguna. Fungsi ini menggunakan karakteristik unik dari setiap pengguna, seperti _username_, untuk menghasilkan avatar yang unik. Dengan demikian, setiap pengguna mendapatkan avatar yang khusus dan berbeda dari pengguna lainnya.
+
+![](https://imgur.com/XS99bb1.png)
+![](https://imgur.com/spo52QM.png)
+
